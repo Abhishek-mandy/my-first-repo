@@ -1,0 +1,36 @@
+// The file name must match the public class name exactly (Main.java)
+public class Main {
+    public static void main(String[] args) {
+        // Prints text to the console
+        System.out.println("Hello, World!");
+    }
+}
+
+// Class definition
+class Car {
+    String brand;
+    int year;
+
+    // Constructor to initialize the object
+    public Car(String brand, int year) {
+        this.brand = brand;
+        this.year = year;
+    }
+
+    // Class Method
+    public void displayDetails() {
+        System.out.println("Car Brand: " + brand + ", Year: " + year);
+    }
+}
+
+// Main execution class
+public class MainApp {
+    public static void main(String[] args) {
+        // Creating an instance/object of the Car class
+        Car myCar = new Car("Toyota", 2024);
+
+        // Calling the object's method
+        myCar.displayDetails();
+    }
+}
+
